@@ -9,7 +9,7 @@
 /* Sets grid for the page layout */
 .container { 
     display: grid;
-    grid-template: auto auto 1fr auto / 1fr auto;
+    grid-template: auto 1fr auto / 1fr auto;
     max-width: 1000px;
     margin: 0 auto;
     height: 100vh;
@@ -28,10 +28,11 @@ main {
 }
 
 nav {
-    height: 50px;
     display: flex;
     justify-content:space-around; 
-    align-items: center;   background-color: black;
+    align-items: center; 
+    height: 50px;
+    background-color: black;
 }
 
 nav button {
