@@ -27,6 +27,7 @@ main {
     background-color: lightgray;
 }
 
+/* alignment of nav link */
 nav {
     display: flex;
     justify-content:space-around; 
@@ -35,12 +36,17 @@ nav {
     background-color: black;
 }
 
-nav button {
+/* nav link formatting */
+nav a {
     color: white;
     background-color: black;
+    text-decoration: none;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
+
+/* height and color of footer background */
 footer, header {
     height: 100px;
     background-color: #A9A9A9;
