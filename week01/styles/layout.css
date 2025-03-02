@@ -1,14 +1,18 @@
 /* Applies to the whole page */
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    max-width: 1000px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Sets grid for the page layout */
-body { 
+.container { 
     display: grid;
     grid-template: auto auto 1fr auto / 1fr auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 /* Stretches across all columns */
@@ -44,4 +48,9 @@ footer, header {
 /* sets aside color */
 aside {
     background-color: white;
+}
+
+/* Adds padding around the words */
+h1, h2, p {
+    padding: 20px;
 }
