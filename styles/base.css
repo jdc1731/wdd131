@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "lato", sans-serif;
 }
 
 /* Sets grid for the page layout */
@@ -40,13 +40,13 @@ nav {
     justify-content:space-around; 
     align-items: center; 
     height: 50px;
-    background-color: black;
+    background-color: var(--dark-color);
 }
 
 /* nav link formatting */
 nav a {
     color: white;
-    background-color: black;
+    background-color: var(--dark-color);
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -57,7 +57,7 @@ nav a {
 /* height and color of footer background */
 footer, header {
     height: 100px;
-    background-color: #A9A9A9;
+    background-color: var(--accent-color);
 }
 
 /* link hover styling */
@@ -72,7 +72,6 @@ a:hover {
     background: var(--light-color);
     margin: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column; /* Stack the content vertically */
     gap: 20px;
@@ -84,6 +83,9 @@ a:hover {
     padding: 10px 0;
     background-color: var(--primary-color);
     display: block;
+    color: white;
+    text-align: center;
+    font-family: "playfair display", serif;
 }
 
 .card .content {
@@ -92,16 +94,58 @@ a:hover {
     align-items: flex-start;
 }
 
+/* profile picture styling */
 .profile {
     width: 150px;
     height: auto;
     border-radius: 80px;
     object-fit: cover;
-    margin-right: 30px;
+    margin-right: 50px;
     margin-top: 20px;
 }
 
 .content p {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 40px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns nav to the bottom */
+    height: 100px;
+    background-color: var(--accent-color);
+}
+
+/* Styling for the state info paragraph */
+.state-facts {
+   margin-right: 50px;
+}
+
+/* Styling for State picture */
+.state {
+    width: 150px;
+    height: auto;
+    border-radius: 80px;
+    object-fit: cover;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/* Styling for the Utah section heading */
+h3 {
+    width: 100%; 
+    margin: 0;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: "playfair display", serif;
+}
+
+/* line spacing */
+p {
+    line-height: 1.6; 
+    margin-bottom: 50px;
 }
