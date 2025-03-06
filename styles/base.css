@@ -183,7 +183,7 @@ ul li {
 /* list item styling */
 ul li a {
     text-decoration: none; 
-    color:var(--secondary-color); 
+    color:black; 
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: var(--dark-color); /* Changes color on hover */
+    color: var(--secondary-color); /* Changes color on hover */
     
 }
 
