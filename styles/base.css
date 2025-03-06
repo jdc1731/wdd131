@@ -195,6 +195,7 @@ ul li a {
 
 ul li a:hover {
     color: var(--dark-color); /* Changes color on hover */
+    
 }
 
 #last-modified {
@@ -202,6 +203,6 @@ ul li a:hover {
 }
 
 footer p {
-    margin: 15px;
+    margin: 10px;
 }
 
