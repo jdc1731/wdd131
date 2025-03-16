@@ -19,15 +19,15 @@ section {
 
 footer {
     background-color: lightblue;
-    text-align: center;
-    text-justify: center;
-    height: 40px;
+     display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;
+    height: 50px;
 }
 
 header {
-    background-color: lightblue;
-    text-align: center;
-    height: 40px;
+    background-color: lightblue; 
+    width: 100%;
 }
 
 img {
@@ -36,3 +36,23 @@ img {
     object-fit: cover;
     width: 250px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+
+}
+
+.container {       
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
