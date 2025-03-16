@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 10px;
+}
+
+section {
+    padding: 1rem;
+    background-color: white;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    text-justify: center;
+    height: 40px;
+}
+
+header {
+    background-color: lightblue;
+    text-align: center;
+    height: 40px;
+}
