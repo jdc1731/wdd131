@@ -12,10 +12,9 @@
     }
 
     header  {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+       width: 100%;
         height: 60px;
+        background-color: lightblue;
     }
 
     nav {
@@ -34,6 +33,46 @@
         text-align: center;
         margin: 20px 20px 0 20px;
     }
+    .header-content {       
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
 
+    .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+     #nav-menu {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust for header height */
+        left: 0;
+        width: 100%;
+        background-color: lightblue;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #nav-menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Style the hamburger button */
+    .hamburger-menu {
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        display: block; /* Show the button */
+        display: none; /* Hide the hamburger icon on large screens */
+    }
   
 }
