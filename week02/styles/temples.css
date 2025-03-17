@@ -7,7 +7,7 @@
 
 div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 10px;
 }
@@ -50,12 +50,11 @@ a:hover {
 
 }
 
+/* stacks menu items vertically */
 .header-content {       
-    max-width: 1000px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px;
     }
 
@@ -64,3 +63,27 @@ a:hover {
     margin: 0 auto;
     text-align: center;
 }
+
+    /* Show hamburger icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide navigation links by default */
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Show navigation links when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + #nav-menu {
+        display: flex;
+    }
+
+    /* Style individual links */
+    #nav-menu a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+    }
