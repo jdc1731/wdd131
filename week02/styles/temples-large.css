@@ -1,93 +1,76 @@
 @media screen and (min-width: 500px) {
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
 
- 
-    div {
-        display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-    }  
-      header, main, footer {
+  header, main, footer {
     max-width: 1000px;
     margin: 0 auto;
-    }
+  }
 
-    header  {
-       width: 100%;
-        height: 60px;
-        background-color: lightblue;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        gap: 30px;
-        margin-right: 20px;
-    }
-
-    header p {
-        margin-left: 20px;
-    }
-
-    h1 {
-        text-align: center;
-        margin: 20px 20px 0 20px;
-    }
-    .header-content {       
-    max-width: 1000px;
-    margin: 0 auto;
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    }
+    width: 100%;
+    height: 60px;
+    background-color: lightblue;
+    padding: 0 20px;
+  }
 
-    .footer-content {
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  header p {
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    gap: 30px;
+    max-width: min-content;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px 20px 0 20px;
+  }
+
+  .footer-content {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-}
-  
-    #nav-menu {
+  }
+
+  #nav-menu {
+    display: flex;
     flex-direction: row;
-    display: flex;        position: absolute;
-    top: 60px; /* Adjust for header height */
-    left: 0;
-    width: 100%;
     background-color: lightblue;
     text-align: center;
     padding: 10px 0;
-    }
+  }
 
-    #nav-menu a {
-        display: block;
-        padding: 10px;
-    }
+  #nav-menu a {
+    display: block;
+    padding: 10px;
+  }
 
-    /* Style the hamburger button */
-    .menu-icon {
-        background: none;
-        border: none;
-        cursor: pointer;
-        display: block;
-        /* Show the button */ */
-        display: none; /* Hide the hamburger icon on large screens */
-    }
-        #menu-button {
-        display: none; /* Hide hamburger menu on large screens */
-    }
+  /* Style the hamburger button */
+  .menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
 
-    /* #nav-menu {
-        display: flex; 
-        max-width: 1000px;
-        margin: 0 auto;
-        justify-content: space-between;
-        flex-direction: row;
-    } */
-
-    a {
-        text-decoration: none;
-        color: black;
-        width:20px;
-    }
+  #menu-button {
+    display: none; /* Hide hamburger menu on large screens */
+  }
 }
-  
+
