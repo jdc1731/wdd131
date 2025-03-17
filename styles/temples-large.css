@@ -27,8 +27,9 @@
     /* width: 100%; */
   }
 
-  header p {
+  header h1 {
     margin: 0;
+    font-size: 30px;
   }
 
   nav {
@@ -37,7 +38,7 @@
     max-width: min-content;
   }
 
-  h1 {
+  h2 {
     text-align: center;
     margin: 20px 20px 0 20px;
   }
