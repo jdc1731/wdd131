@@ -69,23 +69,34 @@ a:hover {
     /* Show hamburger icon */
     .menu-icon {
         display: block;
+         /* Style the hamburger button */
+    
+        background: none;
+        border: none;
+        cursor: pointer;
+        /* display: block; 
+        Show the button */
+        display: none; /* Hide the hamburger icon on large screens */
     }
+  
 
-    /* Hide navigation links by default */
     #nav-menu {
         display: none;
         flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust for header */
+        left: 0;
         width: 100%;
+        background-color: lightblue;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    /* Show navigation links when checkbox is checked */
-    #menu-toggle:checked + .menu-icon + #nav-menu {
+    /* Show menu when JS adds 'open' class */
+    #nav-menu.open {
         display: flex;
     }
 
-    #menu-toggle {
-        opacity: 0;
-    }
 
     /* Style individual links */
     #nav-menu a {

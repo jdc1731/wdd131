@@ -6,19 +6,17 @@ const lastModifiedDate = document.lastModified;
 document.querySelector('#last-modified').textContent = `Date Last Modified ${lastModifiedDate}`;
 
 document.addEventListener("DOMContentLoaded", function () {
-
-
-    const menuButton = document.querySelector(".menu-icon");
+    const menuButton = document.getElementById("menu-button");
     const navMenu = document.getElementById("nav-menu");
 
-    if (menuButton) {
-        menuButton.addEventListener("click", function () {
-            if (navMenu.style.display === "flex") {
-                navMenu.style.display = "none";
-            } else {
-                navMenu.style.display = "flex";
-            }
-        });
-    }
-});
+    menuButton.addEventListener("click", function () {
+        navMenu.classList.toggle("open");
 
+        // Toggle button icon between ☰ and ✖
+        if (navMenu.classList.contains("open")) {
+            menuButton.innerHTML = "&times;"; // X symbol
+        } else {
+            menuButton.innerHTML = "&#9776;"; // Hamburger symbol
+        }
+    });
+});
