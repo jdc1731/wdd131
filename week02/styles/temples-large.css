@@ -69,8 +69,9 @@
     display: block;
   }
 
+    /* Hide the menu button */
   #menu-button {
-    display: none; /* Hide hamburger menu on large screens */
+    display: none; 
   }
 }
 

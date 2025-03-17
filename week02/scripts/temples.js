@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (navMenu.classList.contains("open")) {
             menuButton.innerHTML = "&times;"; // X symbol
         } else {
-            menuButton.innerHTML = "&#9776;"; // Hamburger symbol
+            menuButton.innerHTML = "&#9776;"; 
         }
     });
 });
