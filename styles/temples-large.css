@@ -18,18 +18,20 @@
     height: 60px;
     background-color: lightblue;
     padding: 0 20px;
+    position: relative;
   }
 
   .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
+    width: 100%; 
   }
 
-  header h1 {
+   h1 {
     margin: 0;
     font-size: 30px;
+    width: 500px;
   }
 
   h2 {
@@ -48,6 +50,8 @@
     flex-direction: row;
     background-color: lightblue;
     padding: 10px 0;
+    position: static; 
+    margin-left: auto; 
   }
 
   #nav-menu a {
@@ -63,7 +67,7 @@
     display: block;
   }
 
-    /* Hide the menu button */
+  /* Hide the menu button */
   #menu-button {
     display: none; 
   }
