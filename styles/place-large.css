@@ -1,0 +1,80 @@
+@media screen and (min-width: 500px) {
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    justify-items: center; 
+    margin: 0;
+    font-size: 18px;
+    
+}
+
+header, footer {
+    width: 100%;
+    height: 60px;
+    background-color: darkblue;
+    color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    position: relative; 
+}
+
+.sunny {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+table {
+    margin: 20px auto; 
+    border-collapse: collapse;
+    width: 80%; 
+    border: solid 1px black;
+}
+
+.data-table {
+    position: absolute; 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+  header, main, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  img {
+    position: relative;
+  }
+
+}

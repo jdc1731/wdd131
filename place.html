@@ -15,10 +15,11 @@
     </header>
     <main>
         <picture>
-            <source srcset="images/australia-large.webp" media="(max-width: 500px)">
+            <source srcset="images/australia-large.webp" media="(min-width: 500px)">
             <img src="images/australia-small.webp" alt="Australia" width="500" height="250">
         </picture>
-        <table>
+        <div class="data-table">
+        <table >
             <h2>Data</h2>
             <tr>
                 <th>Area:</th>
@@ -49,24 +50,25 @@
                 <td>+61</td>
             </tr>
         </table>
+        </div>
         <table>
             <h2>Weather</h2>
             <img class="sunny" src="images/sun-icon.svg" alt="Sunny">
             <tr>
                 <th>Temperature:</th>
-                <td>78&deg;</td>
+                <td id="temp">78&deg;C</td>
             </tr>
             <tr>
                 <th>Conditions:</th>
                 <td>Sunny</td>
             </tr>
             <tr>
-                <th>Wind:</th>
+                <th id="wind-speed">Wind:</th>
                 <td>14 km/h</td>
             </tr>
             <tr>
                 <th>Windchill:</th>
-                <td>1&deg;</td>
+                <td id="windchill"></td>
             </tr>
         </table>
     </main>
