@@ -15,12 +15,12 @@
     </header>
     <main>
         <picture>
-            <source srcset="images/australia-large.webp" media="(min-width: 500px)">
+            <source class="large-img" srcset="images/australia-large.webp" media="(min-width: 500px)">
             <img src="images/australia-small.webp" alt="Australia" width="500" height="250">
         </picture>
         <div class="data-table">
-        <table >
             <h2>Data</h2>
+        <table >
             <tr>
                 <th>Area:</th>
                 <td>7,688,287 sq km</td>
@@ -51,9 +51,10 @@
             </tr>
         </table>
         </div>
+        <div class="weather-table">
+        <h2>Weather</h2>
+        <img class="sunny" src="images/sun-icon.svg" alt="Sunny">
         <table>
-            <h2>Weather</h2>
-            <img class="sunny" src="images/sun-icon.svg" alt="Sunny">
             <tr>
                 <th>Temperature:</th>
                 <td id="temp">78&deg;C</td>
@@ -71,6 +72,7 @@
                 <td id="windchill"></td>
             </tr>
         </table>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="current-year"></span> &#9822;Joyce Keil | Utah &#9822;</p>
