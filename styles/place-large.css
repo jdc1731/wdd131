@@ -64,10 +64,6 @@ th, td {
     width: 100%;
   }
 
-  .large-img {
-    position: relative;
-  }
-
   .weather-table {
     position: absolute;
     top: 20px;
@@ -75,4 +71,21 @@ th, td {
     background-color: white;
   }
 
+  .container {
+    position: relative;
+    max-width: 1000px;
+    text-align: center;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .data-table {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    background-color: white;
+  }
 }
