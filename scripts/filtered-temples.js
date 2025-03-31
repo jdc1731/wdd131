@@ -93,7 +93,14 @@ const temples = [
     area: 382207,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
-  }
+  },
+  {
+    templeName: 'Fairbanks Alaska',
+    location: 'Fairbanks, Alaska, United States',
+    dedicated: '2000, December, 17',
+    area: 10000,
+    imageUrl: 'https://churchofjesuschristtemples.org/assets/img/temples/fairbanks-alaska-temple/fairbanks-alaska-temple-55375-main.jpg'
+  },
   // Add more temple objects here...
 ];
 
