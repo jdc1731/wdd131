@@ -80,3 +80,104 @@ const temples = [
   },
   // Add more temple objects here...
 ];
+
+// Display all temples initially
+createTempleCard(temples);
+
+// Event listener for "Old" link
+const oldTempleLink = document.querySelector("#old");
+oldTempleLink.addEventListener("click", () => {
+  const filteredOldTemples = temples.filter((temple) => {
+    const oldYear = parseInt(temple.dedicated.split(",")[0]); // Extract year
+    return oldYear < 1900; // Filter temples dedicated before 1900
+  });
+
+  // Clear the existing temple cards
+  document.querySelector(".temple-grid").innerHTML = "";
+
+  // Call createTempleCard to display the filtered temples
+  createTempleCard(filteredOldTemples);
+});
+
+// Event listener for "New" link
+const newTempleLink = document.querySelector("#new");
+newTempleLink.addEventListener("click", () => {
+  const filteredNewTemples = temples.filter((temple) => {
+    const newYear = parseInt(temple.dedicated.split(",")[0]); // Extract year
+    return newYear > 2000; // Filter temples dedicated after 2000
+  });
+
+  // Clear the existing temple cards
+  document.querySelector(".temple-grid").innerHTML = "";
+
+  // Call createTempleCard to display the filtered temples
+  createTempleCard(filteredNewTemples);
+});
+
+// Event listener for "Large" link
+const largeTempleLink = document.querySelector("#large");
+largeTempleLink.addEventListener("click", () => {
+  const filteredLargeTemples = temples.filter((temple) => {
+    const largeArea = parseInt(temple.area); // Use temple.area directly as it's already a number
+    return largeArea > 90000; // Filter temples with area greater than 90000
+  });
+
+  // Clear the existing temple cards
+  document.querySelector(".temple-grid").innerHTML = "";
+
+  // Call createTempleCard to display the filtered temples
+  createTempleCard(filteredLargeTemples);
+});
+
+// Event listener for "Small" link
+const smallTempleLink = document.querySelector("#small");
+smallTempleLink.addEventListener("click", () => {
+  const filteredSmallTemples = temples.filter((temple) => {
+    const smallArea = parseInt(temple.area); // Use temple.area directly as it's already a number
+    return smallArea < 10000; // Filter temples with area less than 10000
+  });
+
+  // Clear the existing temple cards
+  document.querySelector(".temple-grid").innerHTML = "";
+
+  // Call createTempleCard to display the filtered temples
+  createTempleCard(filteredSmallTemples);
+});
+
+// Event listener for "Home" link
+const homeTempleLink = document.querySelector("#home");
+homeTempleLink.addEventListener("click", () => {
+  // Clear the existing temple cards
+  document.querySelector(".temple-grid").innerHTML = "";
+
+  // Display all temples
+  createTempleCard(temples);
+});
+
+// Function to create temple cards
+function createTempleCard(filterTemples) {
+  filterTemples.forEach((temple) => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class='label'>Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class='label'>Date Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class='label'>Area:</span> ${temple.area} sq. ft.`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", temple.templeName);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(".temple-grid").appendChild(card);
+  });
+}
