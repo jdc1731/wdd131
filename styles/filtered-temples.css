@@ -70,6 +70,7 @@ a:hover {
   
 
 #nav-menu {
+    display: none;
     flex-direction: column;
     position: absolute;
     width: 100%;
