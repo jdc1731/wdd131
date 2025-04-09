@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JJoyce Keil">
+    <meta name="description" content="WDD131- Dynamic Web Fundamentals- Joyce Keil - Form Page">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form action="review.html" method="get">
+        
+            <label>Product Name</label>
+            <br>
+            <select id="product-name" name="product-name"> 
+                <option value="" disabled selected>Select a Product</option>
+            </select>
+            
+            <label class="rating">Overall Rating</label>
+        <div class="stars">
+	        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	        <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </div>
+        
+            <label class="date">Date of Installation</label>
+            <br>
+            <input class="installation" type="date" name="installationDate">
+        
+        <div class="product-use">
+            <p>Which features did you find useful in the product?
+            </p>
+            <p class="apply">(Check all that apply)</p>
+        </div>
+            <label><input id="checkbox" type="checkbox" name="durability" value="yes" >Durability</label>
+            <label><input type="checkbox" name="easeOfUse" value="yes" >Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes">Performance</label>
+            <label><input type="checkbox" name="design" value="yes" >Design</label>
+        
+            <label>
+            <p class="written">
+    Written Review 
+    <span class="optional">(Optional)</span>
+</p>
+<textarea name="reviews" rows="5" cols="40"></textarea>
+            </label>
+            
+        
+        <label>
+             <p class="name">
+                Your Name 
+            <span class="optional">(Optional)</span>
+            </p>
+            <input type="text" name="name">
+        </label>
+         <button type="submit">Post Review</button>
+    </form>
+    
+</body>
+<footer
+    class="footer-content"><p>&copy; <span id="current-year"></span> &#9822;Joyce Keil | Utah &#9822;</p>
+            <p id="last-modified"></p>
+</footer>
+</html>
