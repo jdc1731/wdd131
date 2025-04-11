@@ -99,20 +99,37 @@ h1 {
     font-size: 25px;
 }
 
-#info-section {
+.equine-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info-section {
   display: none;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: white;
+  border: 1px solid black;
   padding: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
 
 /* Meet the herd */
 
 .equine-photo {
   cursor: pointer;
+
 }
 
 .equine-photo:hover {
