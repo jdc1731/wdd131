@@ -100,8 +100,8 @@ const herd = [
       img.setAttribute("src", equine.image);
       img.setAttribute("alt", equine.name);
       img.setAttribute("loading", "lazy");
-      img.setAttribute("width", "250");
-      img.setAttribute("height", "400");
+      img.setAttribute("width", "400");
+      img.setAttribute("height", "250");
 
       card.appendChild(name);
       card.appendChild(age);

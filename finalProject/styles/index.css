@@ -1,41 +1,29 @@
 :root {
-    --primary-color: lightblue;
-    --secondary-color: #f0f0f0;
-    --text-color: #333;
+    --primary-color: #4B0082;
+    --secondary-color: lightgrey;
     --font-family: 'Roboto', sans-serif;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-
-div {
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: 10px;
-}
-
-section {
-    padding: 1rem;
-    background-color: white;
+    font-family: var(--font-family);
 }
 
 
 footer {
-    background-color: lightblue;
      display: flex;
-    justify-content: center; /* Centers text horizontally */
+    justify-content: center; 
     align-items: center;
     height: 50px;
+    
 }
 
 header, footer {
     width: 100%;
     height: 60px;
-    background-color: lightblue;
+    background-color: var(--primary-color);
+    color: white;
 }
  
 
@@ -48,12 +36,12 @@ img {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
 a:hover {
-    color: blue;
+    color: var(--secondary-color);
 
 }
 
@@ -84,13 +72,12 @@ a:hover {
     padding: 10px 0;
     }
 
-    /* Show menu when JS adds 'open' class */
+   
 #nav-menu.open {
     display: flex;
     }
 
 
-    /* Style individual links */
 #nav-menu a {
     padding: 10px 0;
     width: 100%;
@@ -98,18 +85,19 @@ a:hover {
     }
 
 h2 {
-        text-align: center;
-    }
+    background-color: var(--secondary-color);
+    height: 50px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+}
 
 h1 {
     margin: 0;
     font-size: 25px;
 }
-
-  figcaption {
-    font-size: 0.8em;
-    text-align: center;
-  }
 
 #info-section {
   display: none;
@@ -118,9 +106,10 @@ h1 {
   padding: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Ensure it's above images */
+  z-index: 10; 
 }
 
+/* Meet the herd */
 
 .equine-photo {
   cursor: pointer;
@@ -128,4 +117,64 @@ h1 {
 
 .equine-photo:hover {
   border: 3px solid #888;
+}
+
+.equine-grid {
+    text-align: center;
+}
+
+/* info page */
+.newsletter {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.newsletter h2 {
+  text-align: center;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter input,
+.newsletter button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #DDA0DD;
+  color: black;
+}
+
+.about {
+  background-color:#D8BFD8 ; 
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 12px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about img {
+    border-radius: 12px;
 }
