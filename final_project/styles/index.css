@@ -167,6 +167,10 @@ section {
   font-weight: bold;
 }
 /* info page */
+.about img {
+  width: 300px;
+  height: auto;
+}
 .newsletter {
   background-color: var(--secondary-color);
   padding: 20px;
