@@ -27,7 +27,7 @@ const herd = [
     age: "2",
     breed: "Burro",
     gender: "Female",
-    info: "Ridonkylous was born wild and we purchased her from the BLM after a roundup. She is extremely sweet and loves to be around people. She loves treats. ",
+    info: "Ridonkulous was born wild and we purchased her from the BLM after a roundup. She is extremely sweet and loves to be around people. She loves treats. ",
     image: "images/ridonk.webp"
     },
     {
