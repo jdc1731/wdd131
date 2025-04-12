@@ -16,17 +16,29 @@ document.addEventListener('DOMContentLoaded', () => {
 }); 
 
 // Save the email to localStorage on form submission
-document.getElementById('newsletter').addEventListener('submit', function(e) {
-  e.preventDefault(); 
-
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('newsletter');
   const emailInput = document.getElementById('newsletterEmail');
-  const emailValue = emailInput.value.trim();
 
-  if (emailValue) {
-    localStorage.setItem('savedEmail', emailValue);
-    alert('Thank you! Your email has been saved.');
-    emailInput.value = ''; 
+  if (form && emailInput) {
+    const savedEmail = localStorage.getItem('savedEmail');
+    if (savedEmail) {
+      emailInput.value = savedEmail;
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const emailValue = emailInput.value.trim();
+
+      if (emailValue) {
+        localStorage.setItem('savedEmail', emailValue);
+        alert('Thank you! Your email has been saved.');
+        emailInput.value = '';
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
   } else {
-    alert('Please enter a valid email address.');
+    console.warn('Newsletter form or email input not found in the DOM.');
   }
 });
