@@ -9,16 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menu-button");
     const navMenu = document.getElementById("nav-menu");
 
-    menuButton.addEventListener("click", function () {
-        navMenu.classList.toggle("open");
+    if (menuButton && navMenu) { // Add this check
+        menuButton.addEventListener("click", function () {
+            navMenu.classList.toggle("open");
 
-        // Toggle button icon between ☰ and ✖
-        if (navMenu.classList.contains("open")) {
-            menuButton.innerHTML = "&times;"; // X symbol
-        } else {
-            menuButton.innerHTML = "&#9776;"; 
-        }
-    });
+            // Toggle button icon between ☰ and ✖
+            if (navMenu.classList.contains("open")) {
+                menuButton.innerHTML = "&times;"; // X symbol
+            } else {
+                menuButton.innerHTML = "&#9776;";
+            }
+        });
+    }
 });
 
 const herd = [
