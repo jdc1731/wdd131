@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }); 
 
 // Save the email to localStorage on form submission
-document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+document.getElementById('newsletter').addEventListener('submit', function(e) {
   e.preventDefault(); 
 
   const emailInput = document.getElementById('newsletterEmail');
